@@ -59,7 +59,7 @@ for it in range(1, nt):
     psi[-1, it] = 0
 
 x_max_pic = x[np.argmax(np.abs(psi)**2, axis=0)]
-tau_0_num = t[np.argmax(x_max_pic >= x_max_pic[0] + a)]
+tau_0_num = t[np.argmax(x_max_pic >= x_max_pic[0] + 5)]
 print(f"tau_0,num = {tau_0_num:.5f}")
 
 # --- affichage ---
